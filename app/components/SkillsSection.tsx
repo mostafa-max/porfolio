@@ -1,30 +1,24 @@
 
 'use client';
 import { motion } from 'motion/react';
-import { Code, Database, Cloud, Cpu, Brush} from 'lucide-react';
+import { Code, Database, Brush} from 'lucide-react';
 import { useLanguage } from '../utils/LanguageProvider';
 import { translations as t } from '../utils/translations';
 
 
 const skillsData = {
   frontend: [
-    { name: 'React', icon: <Code />, level: '95%' },
-    { name: 'TypeScript', icon: <Code />, level: '90%' },
-    { name: 'Next.js', icon: <Code />, level: '92%' },
+    { name: 'React', icon: <Code />, level: '90%' },
+    { name: 'TypeScript', icon: <Code />, level: '70%' },
+    { name: 'Next.js', icon: <Code />, level: '80%' },
   ],
   backend: [
-    { name: 'Node.js', icon: <Database />, level: '88%' },
-    { name: 'GraphQL', icon: <Database />, level: '85%' },
-    { name: 'PostgreSQL', icon: <Database />, level: '87%' },
+    { name: 'Node.js', icon: <Database />, level: '30%' },
+    { name: 'MongoDB', icon: <Database />, level: '40%' },
   ],
-  tools: [
-    { name: 'Docker', icon: <Cloud />, level: '83%' },
-    { name: 'AWS', icon: <Cloud />, level: '80%' },
-    { name: 'Git', icon: <Cpu />, level: '95%' },
-  ],
+
   design: [
-    { name: 'Figma', icon: <Brush />, level: '90%' },
-    { name: 'Blender', icon: <Brush />, level: '75%' },
+    { name: 'Figma', icon: <Brush />, level: '50%' },
     { name: 'Framer', icon: <Brush />, level: '85%' },
   ],
 };
