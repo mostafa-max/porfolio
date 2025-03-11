@@ -37,7 +37,7 @@ export default function SkillsSection() {
              </motion.h2>
 
       {/* Main skills grid */}
-      <div className="container mx-auto mt-20 grid gap-16 px-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto mt-20 grid gap-16 px-4 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(skillsData).map(([category, skills], index) => (
           <motion.div
             key={category}
