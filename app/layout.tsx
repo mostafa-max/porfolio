@@ -6,17 +6,16 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Particles from "./components/Particles";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-        <Head>
-        <title>&lt;h1&gt; Mostafa Gabr &lt;h1&gt;</title>
-        <meta name="description" content="Creative Front-End Developer | Crafting Code & Building Experiences" />
-      </Head>
+          <head>
+              <title>&lt;h1&gt; Mostafa Gabr &lt;h1&gt;</title>
+              <meta name="description" content="Creative Front-End Developer | Crafting Code & Building Experiences" />
+          </head>
       <body className={`${inter.className} bg-bg text-text relative`}>
         <ThemeProvider>
           <LanguageProvider>
